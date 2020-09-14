@@ -1,0 +1,10 @@
+.task-list{
+  flex-basis: 60%;
+    height: auto;
+    box-shadow: 1px 1px 1px #ccc , -1px -1px 1px #ccc ;
+    margin:auto ;
+}
+.btn-add-task{
+  background : blue ;
+  color:white ;
+}

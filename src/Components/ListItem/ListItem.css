@@ -1,0 +1,16 @@
+
+.btn-update{
+  background: orange;
+}
+.table-task-list{
+  width:100% ;
+  height: auto ;
+  padding:10px ;
+}
+.table-task-list , tr , th , td{
+  border:1px solid #ccc ;
+}
+td{
+  padding:5px ;
+}
+

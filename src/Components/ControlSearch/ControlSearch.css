@@ -1,0 +1,15 @@
+.btn-search{
+  background: blue;
+  color:white
+}
+.control-search{
+  flex-basis: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.control-search-input{
+  flex-basis: 70%;
+}
+.control-search-button{
+  flex-basis: 30%;
+}

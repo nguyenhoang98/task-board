@@ -1,0 +1,24 @@
+.control-sort{
+  flex-basis: 40%;
+  position: relative;
+}
+.btn-sort{
+  background : blue
+}
+
+.sort-link{
+  position: absolute;
+  width  :250px ;
+  height: auto ;
+  box-shadow: 1px 1px 1px #ccc , -1px -1px 1px #ccc ;
+  z-index: 99;
+  background: white;
+}
+.sort-item{
+  width : 100%;
+  color:black ;
+  position: relative;
+}
+.sort-item:hover{
+  background: #ccc;
+}

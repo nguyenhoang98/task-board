@@ -55,13 +55,23 @@ class TaskForm extends Component {
         status : nextProps.editting.status
       })
     }
+    else{
+      this.setState({
+        id: "",
+        name: "",
+        status: true,
+      })
+    }
   }
   render() {
     const { onCloseForm } = this.props ;
+    const { id } = this.state ;
     return (
       <div className="task-form">
         <div className="task-form-title">
-          Thêm Công Việc
+          {
+              id ? 'Cập nhật Công Việc' : 'Thêm Công Việc'
+          }
           <span className="close-form" onClick={onCloseForm}>
             <i className="fa fa-times" aria-hidden="true"></i>
           </span>

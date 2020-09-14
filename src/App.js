@@ -79,9 +79,18 @@ class App extends Component {
     });
   }
   onOpenForm() {
-    this.setState({
-      openForm: true,
-    });
+    const { editting } = this.state ;
+    if(editting !== null){
+      this.setState({
+        openForm: true,
+        editting : null
+      });
+    }
+    else{
+      this.setState({
+        openForm: true,
+      });
+    }
   }
   onDelTask(task) {
     let index = this.findindex(task.id);
@@ -93,8 +102,8 @@ class App extends Component {
   onUpdateTask(task) {
     this.setState({
       editting: task,
+      openForm : true
     });
-    this.onOpenForm();
   }
   onToggleStatus(task) {
     let index = this.findindex(task.id);
